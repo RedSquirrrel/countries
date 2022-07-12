@@ -1,0 +1,35 @@
+.dropdown_container {
+  width: 200px;
+}
+
+.filter_container {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+
+.filter_container img {
+  width: 1.8rem;
+  cursor: pointer;
+}
+
+.list_container {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+
+.list_container li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.list_container li:hover {
+  background-color: silver;
+}

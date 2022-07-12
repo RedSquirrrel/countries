@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light Mode Background */
+  --body-bg: hsl(0, 0%, 98%);
+  --header-bl: hsl(0, 0%, 52%);
+}
+
+body {
+  background: var(--body-bg);
+  font-family: 'Lato', sans-serif;
+}
+
