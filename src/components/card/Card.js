@@ -1,7 +1,7 @@
 import './Card.css';
 
-const Card = () => {
-  return <div className='card_container'>Card</div>;
+const Card = ({ country }) => {
+  return <div className='card_container'>{country.name}</div>;
 };
 
 export default Card;
