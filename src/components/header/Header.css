@@ -2,16 +2,23 @@
   height: auto;
   border-bottom: 1px solid var(--header-bl);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-
-  padding: 1rem 2.5rem;
-  /* margin-bottom: 2rem; */
-
+  padding: 1.2rem 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.toggle_container {
+.header_container h1 {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  letter-spacing: 2px;
+  font-size: clamp(1rem, 3vw, 3rem);
+}
+
+.globe_container {
   width: 35px;
   cursor: pointer;
+}
+
+.globe_container img {
+  width: 40px;
 }

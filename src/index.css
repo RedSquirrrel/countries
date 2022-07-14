@@ -5,13 +5,20 @@
 }
 
 :root {
-  /* Light Mode Background */
   --body-bg: hsl(0, 0%, 98%);
   --header-bl: hsl(0, 0%, 52%);
 }
 
 body {
-  background: var(--body-bg);
+  background: url(./assets/bg.jpg) no-repeat center center/cover;
+  height: fit-content;
+  background-attachment: fixed;
   font-family: 'Lato', sans-serif;
+}
+
+a:visited,
+a:focus,
+a:link {
+  text-decoration: none;
 }
 

@@ -2,18 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1rem 2.5rem;
-  /* background: limegreen; */
-  padding-top: 2rem;
-  background-color: rgb(240, 240, 240);
-  max-height: 80px;
+  padding: 2rem 2.5rem;
+  height: 8rem;
 }
 
 .inputs_container input {
-  background: url(../../assets/search.svg) no-repeat;
+  background: url(../../assets/search.svg) no-repeat, rgb(240, 240, 240);
   background-position: left 1rem bottom 50%;
-  height: 3rem;
-  width: 30rem;
+  min-height: 3rem;
+  max-width: 30rem;
+  width: 100%;
   margin-right: 2rem;
   border: none;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -27,4 +25,15 @@
 
 .inputs_container input:focus {
   outline: none;
+}
+
+@media (max-width: 800px) {
+  .inputs_container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .inputs_container input {
+    margin-bottom: 5rem;
+  }
 }

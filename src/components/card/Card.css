@@ -1,4 +1,45 @@
 .card_container {
-  padding-top: 2rem;
-  background-color: red;
+  background: #fff;
+  height: 350px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding-bottom: 2rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.card_container:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.card_inner_container {
+  width: 100%;
+  height: 100%;
+}
+
+.card_inner_container img {
+  height: 60%;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.card_inner_container h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.card_container h3 {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.card_inner_container h2:hover {
+  color: red;
 }
