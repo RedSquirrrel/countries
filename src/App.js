@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Main from './components/main/Main';
 import Inputs from './components/inputs/Inputs';
 import Details from './components/details/Details';
+import Scroll from './components/scroll/Scroll';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -49,7 +50,15 @@ const App = () => {
       <Routes>
         <Route
           path='/'
-          element={data.length ? <Main filteredData={filteredData} setFilteredData={setFilteredData} /> : <h1>Loading...</h1>}
+          element={
+            data.length ? (
+              <Scroll>
+                <Main filteredData={filteredData} setFilteredData={setFilteredData} />
+              </Scroll>
+            ) : (
+              <h1>Loading...</h1>
+            )
+          }
         />
         <Route path='/:name' element={<Details newSearch={newSearch} countryData={filteredData[0]} />} />
       </Routes>

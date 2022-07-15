@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import './Card.css';
 
 const Card = ({ country, setFilteredData }) => {
-  console.log(country);
   return (
     <Link to={`/${country.name}`} className='card_container' onClick={() => setFilteredData([country])}>
       <div className='card_inner_container'>

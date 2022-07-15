@@ -1,9 +1,10 @@
 .details_container {
   width: 80vw;
-  height: 70vh;
+  /* height: 70vh; */
+  height: fit-content;
   background: rgb(255, 255, 255);
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
+  /* margin: 0 auto; */
   padding: 2rem;
 }
 
@@ -49,8 +50,10 @@
 }
 
 .country_details img {
-  min-width: 45%;
-  height: inherit;
+  max-width: 45%;
+  width: 100%;
+  height: auto;
+  box-shadow: 12px 5px 10px 10px rgba(26, 26, 26, 0.404);
 }
 
 .details_text {
