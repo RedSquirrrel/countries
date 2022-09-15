@@ -7,6 +7,7 @@ import Main from './components/main/Main';
 import Inputs from './components/inputs/Inputs';
 import Details from './components/details/Details';
 import Scroll from './components/scroll/Scroll';
+import globe from './assets/flags_globe.gif';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -59,7 +60,9 @@ const App = () => {
                 <Main filteredData={filteredData} setFilteredData={setFilteredData} />
               </Scroll>
             ) : (
-              <h1>Loading...</h1>
+              <div className='globe_loading'>
+                <img src={globe} alt='globe' />
+              </div>
             )
           }
         />
