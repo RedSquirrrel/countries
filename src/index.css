@@ -7,6 +7,7 @@
 :root {
   --body-bg: hsl(0, 0%, 98%);
   --header-bl: hsl(0, 0%, 52%);
+  --main-message: #9f5f2a;
 }
 
 body {

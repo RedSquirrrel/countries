@@ -1,8 +1,8 @@
-import './Dropdown.css';
+import { useState } from 'react';
 
 import down from '../../assets/down.svg';
 import up from '../../assets/up.svg';
-import { useState } from 'react';
+import './Dropdown.css';
 
 const Dropdown = ({ newValue, setNewValue }) => {
   const [toggle, setToggle] = useState(false);

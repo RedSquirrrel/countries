@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import Header from './components/header/Header';
@@ -14,6 +14,7 @@ const App = () => {
   const [searchBy, setSearchBy] = useState('');
   const [backBtn, setBackBtn] = useState(true);
   const [newValue, setNewValue] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get('https://restcountries.com/v2/all').then(response => {
@@ -39,8 +40,10 @@ const App = () => {
   }, [data, newValue, searchBy]);
 
   const newSearch = () => {
+    console.log('BACK BTN');
     setBackBtn(!backBtn);
     setFilteredData(data);
+    navigate('/');
   };
 
   return (

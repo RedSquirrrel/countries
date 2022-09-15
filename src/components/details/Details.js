@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import './Details.css';
 
@@ -15,9 +15,12 @@ const Details = ({ countryData, newSearch }) => {
   return (
     <div className='details_container'>
       <div className='btn-name_container'>
-        <Link className='back_btn' to='/' onClick={newSearch}>
+        <div className='back_btn' onClick={newSearch}>
           Back
-        </Link>
+        </div>
+        {/* <Link className='back_btn' to='/' onClick={newSearch}>
+          Back
+        </Link> */}
         <h1 className='country_name'>{name} </h1>
       </div>
       <h2 className='capital'>
@@ -35,7 +38,7 @@ const Details = ({ countryData, newSearch }) => {
             Population: <span>{population.toLocaleString()}</span>
           </p>
           <p>
-            area: <span>{area}</span>
+            Area: <span>{area}</span>
           </p>
           <p>
             Region: <span>{region}</span>
@@ -55,7 +58,7 @@ const Details = ({ countryData, newSearch }) => {
             ))}
           </p>
           <p>
-            Internet domain: <span>{topLevelDomain}</span>
+            Internet Domain: <span>{topLevelDomain}</span>
           </p>
         </div>
       </div>
